@@ -5,13 +5,13 @@ from common_steps.common_docker_steps import *
 
 @step(u'Container output contains "{output}"')
 def container_output_contains(context, output):
-    assert context.job == output
+    assert context.output == output, "Expected '%s' but was '%s'" % (output, context.output)
 
 
 @step(u'Docker container is started and exits with exit code "{expected_exit_code}"')
 def container_started(context, expected_exit_code=0):
     # TODO: allow tables here
-    context.job = context.run('docker run --cidfile %s %s' % (
+    context.output = context.run('docker run --cidfile %s %s' % (
         context.cid_file, context.image))
     context.cid = context.open_file(context.cid_file).read().strip()
 
