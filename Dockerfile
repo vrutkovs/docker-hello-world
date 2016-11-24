@@ -4,4 +4,5 @@ ENV MY_NAME=rawhide/docker-hello-world \
 LABEL Name=$MY_NAME \
       Version=$MY_VERSION \
       BZComponent=hello
+RUN exit 1
 CMD printf "I am $MY_NAME-$MY_VERSION-$MY_RELEASE\n"
