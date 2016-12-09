@@ -1,5 +1,5 @@
 #!/bin/bash
-set -x
+set -ux
 
 flatpak remote-add --from origin $RUNTIME_REMOTE
 flatpak -v --ostree-verbose install origin $RUNTIME_PLATFORM
