@@ -7,7 +7,7 @@ flatpak remote-add --gpg-import=gnome-sdk.gpg origin $RUNTIME_REPO
 flatpak -v --ostree-verbose install origin $RUNTIME_PLATFORM
 flatpak -v --ostree-verbose install origin $RUNTIME_SDK
 
-tree /build
+ls -la /build
 cd /build
 
 #rsync -r $RSYNC_REPO/* repo/
