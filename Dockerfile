@@ -2,7 +2,7 @@ FROM rhel7
 
 LABEL name=vrutkovs/flatpak-builder
 LABEL com.redhat.component=osbs-buildroot-docker
-LABEL version=1.0.vrutkovs
+LABEL version=1.0.vrutkovs.flatpak
 LABEL release=1
 
 RUN yum install -y https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm && \
