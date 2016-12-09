@@ -1,7 +1,9 @@
 #!/bin/bash
 set -ux
 
-flatpak remote-add --from origin $RUNTIME_REMOTE
+#flatpak remote-add --from origin $RUNTIME_REMOTE
+curl -kLs https://people.gnome.org/~alexl/keys/gnome-sdk.gpg -O gnome-sdk.gpg
+flatpak remote-add --gpg-import=gnome-sdk.gpg origin $RUNTIME_REPO
 flatpak -v --ostree-verbose install origin $RUNTIME_PLATFORM
 flatpak -v --ostree-verbose install origin $RUNTIME_SDK
 
