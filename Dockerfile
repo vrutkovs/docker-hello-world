@@ -4,7 +4,7 @@ FROM rhel7
 LABEL name=vrutkovs/flatpak-builder
 LABEL com.redhat.component=osbs-buildroot-docker
 LABEL version=1.0.vrutkovs
-LABEL release-1
+LABEL release=1
 
 RUN yum install git flatpak flatpak-builder elfutils -y && \
     yum clean all
