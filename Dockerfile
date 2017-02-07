@@ -1,5 +1,5 @@
 FROM busybox
-LABEL Name=rawhide/docker-hello-world \
+LABEL Name=vrutkovs/docker-hello-world \
       Version=1.0 \
       BZComponent=rsyslog-docker
 CMD ["exit", "0"]
