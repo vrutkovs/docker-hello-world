@@ -1,6 +1,7 @@
-FROM rhel7
-LABEL name=vrutkovs/docker-hello-world \
-      version=1.0.vrutkovs \
-      com.redhat.component=docker-hello-world
-ADD server.py /server.py
-CMD ["python", "/server.py"]
+FROM fedora:latest
+LABEL image=test
+LABEL BZComponent=docker-hello-world
+LABEL Name=lucarval/docker-hello-world
+LABEL Version=1.0
+ENV Lðgs="Uňícode íš hářd"
+RUN uname -a && env
