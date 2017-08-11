@@ -1,8 +1,8 @@
 FROM lucarval/docker-hello-world
 LABEL image=test
-LABEL com.redhat.component=docker-hello-world
-LABEL name=lucarval/docker-hello-world
-LABEL version=1.0
-LABEL release=1.3
+LABEL BZCmponent=docker-hello-world
+LABEL Name=lucarval/docker-hello-world
+LABEL Version=1.0
+LABEL Release=1.4
 ENV Lðgs="Uňícode íš hářd"
 RUN uname -a && env
