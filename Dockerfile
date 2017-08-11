@@ -1,4 +1,4 @@
-FROM fedora:latest
+FROM lucarval/docker-hello-world
 LABEL image=test
 LABEL BZComponent=docker-hello-world
 LABEL Name=lucarval/docker-hello-world
