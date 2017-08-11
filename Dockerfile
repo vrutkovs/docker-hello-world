@@ -1,6 +1,6 @@
 FROM lucarval/docker-hello-world
 LABEL image=test
-LABEL BZCmponent=docker-hello-world
+LABEL BZComponent=docker-hello-world
 LABEL Name=lucarval/docker-hello-world
 LABEL Version=1.0
 LABEL Release=1.4
