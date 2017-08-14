@@ -1,7 +1,5 @@
 FROM rhel7
-ENV MY_NAME=rawhide/docker-hello-world \
-    MY_VERSION=1.0
-LABEL Name=$MY_NAME \
-      Version=$MY_VERSION \
-      BZComponent=hello
-CMD printf "I am $MY_NAME-$MY_VERSION-$MY_RELEASE\n"
+LABEL version=1.4.vrutkovs
+LABEL release=1
+LABEL name=rhel7/docker-hello-world
+LABEL com.redhat.component=docker-hello-world
