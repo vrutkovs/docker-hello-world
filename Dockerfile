@@ -1,8 +1,6 @@
-FROM fedora:27
-LABEL name=vrutkovs/cowsay
-LABEL version=3.04
-LABEL com.redhat.component=cowsay
-RUN dnf install -y cowsay && \
-    dnf clean all
-ENTRYPOINT ["/usr/bin/cowsay"]
+FROM vrutkovs/cowsay:latest
+LABEL name=vrutkovs/cowthink
+LABEL version=1.0
+LABEL com.redhat.component=cowthink
+ENTRYPOINT ["/usr/bin/cowthink", "-e", "oO", "-T", "\/"]
 CMD ["hi"]
