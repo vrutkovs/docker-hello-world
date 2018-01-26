@@ -1,4 +1,8 @@
-FROM rhel7/docker-hello-world:latest
-LABEL version=1.4.vrutkovs
-LABEL name=rhel7/docker-hello-world
-LABEL com.redhat.component=docker-hello-world
+FROM fedora:27
+LABEL name=vrutkovs/cowsay
+LABEL version=3.04
+LABEL com.redhat.component=cowsay
+RUN dnf install -y cowsay && \
+    dnf clean all
+ENTRYPOINT ["/usr/bin/cowsay"]
+CMD ["hi"]
